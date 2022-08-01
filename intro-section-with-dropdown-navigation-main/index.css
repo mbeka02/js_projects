@@ -104,7 +104,7 @@ button{
 
 .register{
 
-border:solid 2px;
+border:solid 1.5px;
 border-radius: 12px;
 background-color:transparent;
 color:var(--clr-black);
@@ -113,9 +113,9 @@ font-size: var(--fs-400);
 padding:1rem;
 font-family: var(--ff-epilogue);
 width: fit-content;
-
+margin-inline:3.5rem;
 text-decoration: none;
-margin-inline:3rem;
+
 }
 
 
@@ -161,6 +161,7 @@ margin-inline:3rem;
 
   body{
     background-color: var(--clr-white);
+    
   }
 
   .flow > *:where(:not(:first-child)) {
@@ -216,17 +217,22 @@ margin-inline:3rem;
 
 
 
-.desktop-authentication{
+.primary-header>.desktop-authentication{
   
   text-decoration: none;
-  
   font-weight: 600;
-  justify-content:space-between;
+  
+  
+  
   
   
   
 }
 .mobile-authentication{
+  display: none;
+}
+
+.logo{
   display: none;
 }
 
@@ -442,6 +448,7 @@ h2{
   position:absolute;
   z-index: 2000;
   right:0.2rem;
+  top:0;
    background-image: url(./images/icon-menu.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -498,7 +505,12 @@ h2{
   .logo {
       
     margin: 1rem clamp(.5rem, .5vw, .5rem);
+    display:contents;
     
+}
+
+.desktop-logo{
+  display: none;
 }
 
  
