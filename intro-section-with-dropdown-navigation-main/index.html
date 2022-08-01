@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<!--Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400&family=Inter:wght@300&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+   <!--My custom CSS-->
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+  <script src="mobile-navigation.js"defer></script>
+</head>
+<body class="flow">
+  <header class="flex primary-header ">
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation"><span class="sr-only" aria-expanded="false">Menu</span></button> 
+<div class="header primary-navigation ff-epilogue fs-300 flex" data-visible="false">
+ 
+  
+  <div class="dropdown"data-dropdown>
+   <button  id="btn-1" class="link flex"data-dropdown-button>Features<img class="image"src="./images/icon-arrow-down.svg"></button>
+    <div  class="dropdown-menu flow ">
+     <div class="dropdown-links ">
+      <a href="#"class="text-grey flex"><img src="./images/icon-todo.svg"> List</a>
+      <a href="#"class="text-grey flex"><img src="./images/icon-calendar.svg">Calendar</a>
+      <a href="#"class="text-grey flex"><img src="./images/icon-reminders.svg">Reminders</a>
+        <a href="#"class="text-grey flex"><img src="./images/icon-planning.svg">Planning</a>
+      </div>
+    
+    </div>
+ 
+  </div>
+  
+ <div  class="dropdown"data-dropdown>
+  <button id="btn-2" class="link flex" data-dropdown-button >Company<img class="image"src="./images/icon-arrow-down.svg"></button>
+  <div  class="dropdown-menu flow">
+    <div class="dropdown-links">
+      <a href="#"class="text-grey flex">History</a>
+      <a href="#"class="text-grey flex">Our team</a>
+      <a href="#"class="text-grey flex">Blog</a>
+    </div>
+  </div>
+ </div>
+ <a href="#"class="text-grey">Careers</a>
+  <a href="#"class="text-grey">About</a>
+  <div class="mobile-authentication ">
+    <a href="#"class="text-grey">Login</a>
+    <a href="#" class="register">Register</a>
+   </div>
+ </div>
+ <div class=" desktop-authentication ">
+  <a href="#"class="text-grey ff-epilogue fs-300 ">Login</a>
+  <a href="#" class="register">Register</a>
+ </div>
+
+ </header>
+
+
+
+ <br>
+ <div class="grid-container grid-container--home">
+  <div class="flow">
+  <h2 class="ff-epilogue text-black  page-title" style="font-weight:800">Make remote work</h2>
+
+ <p class="ff-epilogue fs-600 text-grey"> Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.</p>
+  <button class="button" >Learn more</button>
+  <div class="flex logos">
+    <img src="./images/client-databiz.svg" alt="databiz">
+    <img src="./images/client-audiophile.svg" alt="audiophile">
+    <img src="./images/client-meet.svg" alt="client-meet">
+    <img src="./images/client-maker.svg" alt="client-maker" >
+  </div>
+  
+  </div>
+  <picture class="hero">
+    
+   <source
+   media="max-width:55rem"
+   srcset="images/image-hero-desktop.png">
+  <source 
+    media="(max-width: 48rem)"
+    srcset="images/image-hero-mobile.png">
+     <img src="./images/image-hero-desktop.png">
+    </picture>
+    </div>
+<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Anthony Mbeka</a>.
+  </div>
+</body>
+</html>
