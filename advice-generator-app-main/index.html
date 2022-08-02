@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+  <!--My custom CSS styling-->
+   <link rel="stylesheet"href="index.css">
+  
+</head>
+<body >
+ 
+  <div class="grid container">
+    <!-- Advice ID goes here -->
+   <span id="adviceID"></span>
+  <!-- Advice text goes here -->
+  <span id="content">  </span>
+  <picture>
+  <source media="(max-width:35rem)" class="divider"srcset="./images/pattern-divider-mobile.svg"alt="mobile-pattern-divider">
+  <img class="divider" src="./images/pattern-divider-desktop.svg"alt="pattern-divider">
+  
+  </picture>
+  <button id="btn"><img src="./images/icon-dice.svg" alt="dice"></button>
+  </div>
+<script src="advice.js"></script>
+</body>
+</html>
