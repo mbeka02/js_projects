@@ -241,7 +241,7 @@ a{
 
    .dropdown-menu{
     position:absolute;
-    
+   
     top:calc(100% +.5rem);
     background-color:var(--White);
     width:20rem;
@@ -253,6 +253,9 @@ a{
     transform: translateY(-10px);
     border-radius: 12px;
     padding-bottom: .5rem;
+    z-index: 500;
+    
+    
   }
 
   
@@ -261,6 +264,8 @@ a{
     opacity: 1;
     pointer-events: auto;
     transform:translateY(0px);
+   
+   
     
   }
 
@@ -360,11 +365,12 @@ border-radius: 50%;
   
 }
 
-
-.indicators > *:hover{
-
-  border: solid 1px orange;
+.thumbnail:hover{
+  box-shadow:0 0 15px  rgba(255, 145, 0, 0.959);
 }
+
+
+
 
 
 
@@ -504,7 +510,7 @@ border-radius: 50%;
     .primary-navigation{
         position:fixed;
         background-color: var(--White);
-        z-index:1000;
+        z-index:100;
         transform: translateX(-180%);
         transition: 100ms ease-in-out;
         padding: min(20rem, 15vh) 2rem;
@@ -539,7 +545,7 @@ border-radius: 50%;
     width: 2.2rem;
      aspect-ratio: 1;
     border: 0;
-    z-index: 2000;
+    z-index: 200;
   }
 
 
@@ -561,6 +567,7 @@ border-radius: 50%;
   position: relative;
   grid-area: container;
   display:grid;
+  
 }
 
 .btn {
@@ -604,6 +611,7 @@ border-radius: 50%;
 .slider {
   width: 100%;
   height: 100%;
+  
 }
 
 .slide {
@@ -611,6 +619,8 @@ border-radius: 50%;
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  
+ 
 }
 
 
@@ -627,7 +637,12 @@ border-radius: 50%;
     padding: 0;
     margin-inline: 0;
   }
-
+  .indicators{
+    justify-content: space-between;
+  }
+  .thumbnail:hover{
+    box-shadow:0 0 15px  rgba(255, 145, 0, 0.959);
+  }
  .product-picture{
   max-width: 100%;
   margin:0;
@@ -704,6 +719,9 @@ border-radius: 50%;
  .original-price{
   margin: 0;
  }
+
+ 
+
 
   body{
     overflow-x: hidden;
