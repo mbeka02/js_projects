@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <!--Google fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <!--My custom CSS-->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="lightbox.css">
+  <script src="index.js"defer></script>
+  <script src="cart.js" defer></script>
+  <script src="lightbox.js" defer></script>
+ 
+
+</head>
+<body>
+
+  <div class="primary-header flex">
+   <button class="mobile-nav-toggle"aria-controls="primary-navigation"><span class="sr-only"aria-expanded="true">Menu</span></button>
+    <picture>
+     <img class="logo" src="./images/logo.svg" alt="company-logo"> 
+    </picture>
+    <div class="primary-navigation flex flow sans" data-visible="false">
+<a class="underline-indicator">Collections</a>
+<a class="underline-indicator"> Men</a>
+<a class="underline-indicator">Women</a>
+<a class="underline-indicator"> About</a>
+<a class="underline-indicator">Contact</a>
+      </div>
+      <div class="img-container">
+      <div class="cart-element">
+        <div class="dropdown" data-dropdown>
+      <button class="link cart" data-dropdown-button><img  src="./images/icon-cart.svg" alt="cart"></button>
+      <div class="dropdown-menu">
+       <h3 class="txt-black sans fs-400">Cart</h3>
+       <hr> 
+      <div id="checkout"class="grid">
+       <!--Cart items are inserted dynamically check cart.js-->
+      </div>
+      <button class="checkout-btn">Checkout</button>
+      </div>
+        </div>
+       <span id="cartAmount" class="cartAmount">0</span>
+      </div>
+      <img class="avatar" src="./images/image-avatar.png"alt="avatar">
+    </div>
+    
+  </div>
+   <main id="main" class="grid grid-container sans">
+    <div class="indicators flex"  role="tablist" aria-label="shoe-list">
+      <img class=" thumbnail" src="./images/image-product-1-thumbnail.jpg" aria-selected="true" role="tab" aria-controls="fall" tabindex="0" data-image ="fall-image">
+      <img class=" thumbnail"src="./images/image-product-2-thumbnail.jpg" aria-selected="false"  role="tab" aria-controls="stylish" tabindex="-1"data-image ="stylish-image">
+      <img class=" thumbnail"src="./images/image-product-3-thumbnail.jpg"aria-selected="false"  role="tab" aria-controls="rock" tabindex="-1" data-image ="rock-image">
+      <img class=" thumbnail" src="./images/image-product-4-thumbnail.jpg"aria-selected="false" role="tab" aria-controls="athletic" tabindex="-1"data-image ="athletic-image">
+    </div>
+
+    <section class="slider-container">
+      <button id="prev" class="btn btn--left hidden"  >
+        <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 1 3 9l8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+        </svg>
+      </button>
+      <button id="next" class="btn btn--right"><svg width="13" height="18" xmlns="http://www.w3.org/2000/svg">
+          <path d="m2 1 8 8-8 8" stroke="#1D2026" stroke-width="3" fill="none" fill-rule="evenodd" />
+        </svg></button>
+      <div class="slider flex">
+        <img class="slide slide1" src="./images/image-product-1.jpg" alt="Shoes">
+        <img class="slide slide2" src="./images/image-product-2.jpg" alt="Shoes">
+        <img class="slide slide3" src="./images/image-product-3.jpg" alt="Shoes">
+        <img class="slide slide4" src="./images/image-product-4.jpg" alt="Shoes">
+      </div>
+      <!-- IMAGE small -->
+      <!-- IMAGE small -->
+      <!-- IMAGE small -->
+      <!-- IMAGE small -->
+    </section>
+    <div id="container">
+     <!--Product tabs are inserted through javascript (check cart.js)-->
+        </div>
+
+       
+
+        
+        <picture id="fall-image" class="product-picture" >
+          
+            <img src="./images/image-product-1.jpg">
+           </picture>
+        
+          <picture hidden id="stylish-image" class=" product-picture">
+            <img src="./images/image-product-2.jpg">
+          </picture>
+
+          <picture hidden id="rock-image" class=" product-picture">
+            <img src="./images/image-product-3.jpg">
+          </picture>
+          <picture hidden id="athletic-image" class=" product-picture" >
+            <img src="./images/image-product-4.jpg">
+          </picture>
+       
+          <div class="preview-box">
+            <span class="title">Shoe<p class="current-img"></p> of <p class="total-img"></p></span>
+            <span class="icon fas fa-times"></span>
+             <div class="image-box">
+              <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+              <div class="slide next"><i class="fas fa-angle-right"></i></div>
+              <img src="" alt="">
+            </div>
+          </div>
+          <div class="shadow"></div>
+
+   </div>       
+         
+  </main> 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Anthony Mbeka</a>.
+  </div>
+</body>
+</html>

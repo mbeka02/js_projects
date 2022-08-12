@@ -1,0 +1,119 @@
+/*Lightbox*/
+.preview-box{
+    position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+       margin: auto;
+       width:40%;
+      z-index: 5;
+       pointer-events: none;
+        background-color:transparent;
+        display: none;
+       
+    
+        /* Alternative method to centre div
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      */
+       
+        
+    
+    }
+    
+    .preview-box.show{
+        display: grid;
+        pointer-events: auto;
+    
+    }
+    
+    .preview-box .details{
+        display: flex;
+        align-items: center;
+        padding: 12px 15px 12px 10px;
+        justify-content: space-between;
+      }
+      .preview-box  .title{
+        display: flex;
+        font-size: 2px;
+        color:transparent;
+        font-weight: 300;
+      
+      }
+       .title p{
+        margin: 0 5px;
+        font-size: 2px;
+        color: transparent;
+      }
+       .title p.current-img{
+        font-weight: 500;
+      }
+       .icon{
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        place-self:end;
+        margin-right: 10px;
+      }
+    
+      .icon:hover{
+        color:orangered;
+      }
+      .preview-box .image-box{
+        display: flex;
+        width: 100%;
+        position: relative;
+      }
+      .image-box .slide{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        height: 50px;
+        width: 60px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 3px;
+      }
+      .slide.prev{
+        left: 0px;
+        background-color: white;
+        color:black;
+        clip-path: circle();
+        object-fit: contain;
+        transform: translateX(-1.5rem);
+        
+       
+      }
+      .slide.next{
+        right: 0px;
+        background-color: white;
+        color:black;
+        clip-path: circle();
+        object-fit: contain;
+        transform: translateX(1.5rem);
+      }
+      .image-box img{
+        width: 100%;
+        border-radius:20px;
+      }
+      .shadow{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        display: none;
+        background: rgba(0,0,0,0.45);
+      }
+    
