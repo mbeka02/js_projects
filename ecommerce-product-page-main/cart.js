@@ -1,5 +1,7 @@
 
 const container=document.getElementById("container")
+let amount=document.getElementById("cartAmount")
+const checkoutbtn=document.querySelector(".checkout-btn")
 /*Initializes the cart with the items already in localStorage or as an empty array*/
 
 let cart=JSON.parse(localStorage.getItem("products")) || []
@@ -145,7 +147,7 @@ function update(id){
 }
 /*Adds up all the selcted products and displays the number on the cart icon*/
 function calculate(){
-  let amount=document.getElementById("cartAmount")
+ 
   amount.innerHTML=cart.map((x)=> x.item).reduce((x,y)=>x+y,0)
 
 }
@@ -160,6 +162,9 @@ let generateCheckout=()=>{
  const checkout=document.getElementById("checkout")
   if(cart.length !==0)
   {  /*Place holder*/
+  amount.removeAttribute("hidden")
+  amount.style.display="block"
+  checkoutbtn.style.display="block"
  return(checkout.innerHTML=cart.map((x)=>{
   let {id,item,img}=x
   let search=purchase_info.find((y)=>y.id === id) || []
@@ -185,6 +190,8 @@ let generateCheckout=()=>{
   }
 
   else{
+   amount.style.display="none"
+   checkoutbtn.style.display="none"
    checkout.innerHTML=`
    <p class="empty">Your cart is empty</p>`
 
