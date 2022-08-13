@@ -360,6 +360,7 @@ a{
   .empty{
      font-weight: 600;
      color:var(--Darkgrayish_blue);
+     padding: 2rem 0 2rem 0;
   }
 
   
@@ -370,16 +371,18 @@ a{
   cursor: pointer;
   padding: var(--underline-gap, .3rem) 0;
   border: 0;
-  border-bottom: .2rem solid var(--clr-orange);
+  text-decoration: underline 4px orangered; 
   background-color: transparent;
   margin:0;
+  text-underline-offset: 2.7rem;
 }
 
 .avatar:hover{
 cursor: pointer;
-border:solid 2px var(--clr-orange);
+box-shadow: 0 0 0 2px rgba(252, 144, 2, 0.966);
 
-border-radius: 50%;
+
+
 }
 
 
@@ -470,7 +473,7 @@ border-radius: 50%;
 
   .primary-header{
     
-    padding: 1rem  2rem 2rem 1rem;
+    padding: 1rem  2rem 1rem 1rem;
     margin:1rem;
     justify-content: space-around;
     border-bottom: solid 1px grey ;
@@ -816,8 +819,9 @@ border-radius: 50%;
 
 .avatar{
     max-width: 30%;
-    clip-path: circle();
     object-fit: contain;
+    border-radius: 50%;
+    transform: translateY(6px);
 }
 
 .img-container{
@@ -872,4 +876,14 @@ border-radius: 50%;
 .company-header{
   color:rgba(241, 163, 16, 0.918);
 }
+
+.attribution{
+  text-align: center;
+  font-family: var(--ff-kumbh);
+}
+
+.attribution a{
+  color: var(--clr-orange);
+}
+
 

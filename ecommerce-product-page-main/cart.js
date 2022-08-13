@@ -39,8 +39,9 @@ price:125,
     Name:"Athletic sneakers",
     price:125,
      id:"athletic",
-     desc: `Slip-on ankle design allows you easily put on/off.
-     The shoes heels protect your feet from injury in any activities. Provides more comfort.`,
+     desc: ` The upper material of this trail running  shoes are mesh-designed,
+      the space between mesh fibers forms an air passage for excellent air permeability, 
+      allowing comfort and dryness during exercise.`,
      img:"./images/image-product-4-thumbnail.jpg"
      
     },
