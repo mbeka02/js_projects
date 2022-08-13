@@ -193,9 +193,23 @@ a{
     border:0;
     padding-inline: 4rem;
     margin-inline: 1rem;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
    
 
 
+   }
+   .cart-btn svg{
+   
+    fill-rule:"nonzero";
+    margin-right: .7rem;
+
+   }
+
+   .cart-btn svg path{
+    fill:white;
    }
 
    .cart-btn:hover {
@@ -279,6 +293,7 @@ a{
 
   .dropdown-menu>h3{
     text-align: left;
+    margin-inline: .9rem;
   }
 
   #checkout>.empty{
@@ -293,6 +308,7 @@ a{
 
   .product-info{
     display: grid;
+   
   }
 
   .product-container{
@@ -300,6 +316,9 @@ a{
     font-weight: 400;
     color:var(--Darkgrayish_blue);
     font-size: var(--fs-300);
+    
+    
+   
 
   }
 
@@ -310,14 +329,24 @@ a{
   }
 
   .delete{
-    max-width: 10%;
+    max-width: 20%;
+   place-self:end;
+   transform: translateY(-4rem);
+   margin-right: 1rem;
+  
+   
+    
     
   }
 
+ 
+
   .checkout-btn{
     background-color: var(--clr-orange);
+    color:var(--White);
     font-family: var(--ff-kumbh);
     font-size: var(--fs-400);
+    font-weight: 700;
     text-align: center;
     padding:1rem;
     border: 0;
@@ -328,6 +357,12 @@ a{
 
   }
 
+  .empty{
+     font-weight: 600;
+     color:var(--Darkgrayish_blue);
+  }
+
+  
   
  /*Indicators/Hover states*/
 
@@ -764,12 +799,7 @@ border-radius: 50%;
   .slide{
     z-index: -1;
   }
-  /*
-  .dropdown.active > .link+.dropdown-menu{
-    position: absolute;
-    z-index: 9;
-  }
-  */
+  
  
 }
 

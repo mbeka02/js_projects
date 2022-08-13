@@ -94,6 +94,9 @@
         
        
       }
+      .slide.prev:hover{
+        color:orangered;
+      }
       .slide.next{
         right: 0px;
         background-color: white;
@@ -101,6 +104,10 @@
         clip-path: circle();
         object-fit: contain;
         transform: translateX(1.5rem);
+      }
+
+      .slide.next:hover{
+        color:orangered;
       }
       .image-box img{
         width: 100%;
