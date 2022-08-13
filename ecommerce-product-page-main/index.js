@@ -140,7 +140,7 @@ let currentIndex = 0;
 
 function moveSlider(dir){
  dir === 'next' ? currentIndex++ : currentIndex --;
-  slider.style.transform = `translateX(-${103.3* currentIndex}%)`;
+  slider.style.transform = `translateX(-${102.65* currentIndex}%)`;
   switch (currentIndex){
     case 0: 
       document.querySelector('#prev').classList.add('hidden');

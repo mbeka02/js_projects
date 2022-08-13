@@ -374,6 +374,7 @@ border-radius: 50%;
 
 .thumbnail:hover{
   box-shadow:0 0 15px  rgba(255, 145, 0, 0.959);
+ 
 }
 
 
@@ -508,6 +509,10 @@ border-radius: 50%;
    .slider-container{
     display: none;
    }
+
+   .btn{
+    display: none;
+  }
  
   /*Mobile*/
 
@@ -577,16 +582,18 @@ border-radius: 50%;
   position: relative;
   grid-area: container;
   display:grid;
+  z-index: -1;
+  
  
   
 }
 
 .btn {
-  position: absolute;
-  z-index: 3;
-  top: 50%;
+  position:absolute;
+  z-index: 1;
+  top: 70%;
+  display: grid;
   background-color: var(--White);
-
   height: var(--sizer-3);
   width: var(--sizer-3);
   border-radius: 50%;
@@ -740,12 +747,30 @@ border-radius: 50%;
 
   .dropdown-menu{
     position: absolute;
-    z-index: 9;
+    z-index: 900;
+    transform: translateY(0px);
+   
+   
+  }
+
+  .dropdown.active > .link+.dropdown-menu{
+   
+    transform: translate(-230px,100px);
+  
+  
+   
   }
 
   .slide{
     z-index: -1;
   }
+  /*
+  .dropdown.active > .link+.dropdown-menu{
+    position: absolute;
+    z-index: 9;
+  }
+  */
+ 
 }
 
 
@@ -817,3 +842,4 @@ border-radius: 50%;
 .company-header{
   color:rgba(241, 163, 16, 0.918);
 }
+
