@@ -1,4 +1,4 @@
-/*Mobile navigation*/
+/*Mobile navigation toggle*/
 
 const nav=document.querySelector(".primary-navigation")
 const toggle=document.querySelector(".mobile-nav-toggle")
