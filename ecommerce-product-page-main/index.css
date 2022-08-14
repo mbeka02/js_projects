@@ -222,7 +222,7 @@ a{
     gap:var(--gap, 1rem);
     grid-area: buttons;
     
-    border:solid 1px red;
+    
     
     
    }
@@ -265,7 +265,7 @@ a{
     opacity: 0;
     pointer-events: none;
     transition: opacity 150ms ease-in-out ,transform 200ms ease-in-out;
-    transform: translateY(-10px);
+    transform:translateY(0px);
     border-radius: 12px;
     padding-bottom: .5rem;
     
@@ -283,7 +283,8 @@ a{
  .dropdown.active > .link+.dropdown-menu{
     opacity: 1;
     pointer-events: auto;
-    transform:translateY(0px);
+    transform: translate(-80px,20px);
+    
    
    
    
@@ -371,7 +372,7 @@ a{
   cursor: pointer;
   padding: var(--underline-gap, .3rem) 0;
   border: 0;
-  text-decoration: underline 4px orangered; 
+  text-decoration: underline 4px rgba(252, 144, 2, 0.966); 
   background-color: transparent;
   margin:0;
   text-underline-offset: 2.7rem;
@@ -399,7 +400,7 @@ box-shadow: 0 0 0 2px rgba(252, 144, 2, 0.966);
   grid-area: indicators;
   max-width: fit-content;
   height: fit-content;
-  border:solid 1px red;
+ 
   margin:0;
   padding: 0;
 }
@@ -454,7 +455,7 @@ box-shadow: 0 0 0 2px rgba(252, 144, 2, 0.966);
 .content{
   grid-area: content;
   margin: 1rem 1.5rem 1.5rem 0;
-  border: solid 1px yellow;
+ 
   
   
 }
@@ -493,7 +494,7 @@ box-shadow: 0 0 0 2px rgba(252, 144, 2, 0.966);
     margin-inline: 2rem;
     column-gap: var(--container-gap, 2rem);
         grid-template-columns:  auto  auto;
-        border:solid 1px red;
+      
 
         grid-template-areas: 
         ' picture  content '
@@ -769,7 +770,7 @@ box-shadow: 0 0 0 2px rgba(252, 144, 2, 0.966);
 
  .offer{
   flex-direction: row;
-  border: solid 1px green;
+ 
   justify-content: space-between;
  }
  .original-price{
@@ -865,7 +866,7 @@ box-shadow: 0 0 0 2px rgba(252, 144, 2, 0.966);
   border:0;
   background: transparent;
   padding:.4rem;
-  border:solid 1px red;
+  
 }
 
 .product-container>.thumbnail{
