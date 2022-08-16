@@ -27,7 +27,7 @@
  
 
   <div class="primary-header flex">
-   <button class="mobile-nav-toggle"aria-controls="primary-navigation"><span class="sr-only"aria-expanded="true">Menu</span></button>
+   <button class="mobile-nav-toggle"aria-controls="primary-navigation"><span class="sr-only"aria-expanded="true"role="menu">Menu</span></button>
     <picture>
      <img class="logo" src="./images/logo.svg" alt="company-logo"> 
     </picture>
@@ -61,10 +61,10 @@
   </div>
    <main id="main" class="grid grid-container sans">
     <div class="indicators flex"  role="tablist" aria-label="shoe-list">
-      <img class=" thumbnail" src="./images/image-product-1-thumbnail.jpg" aria-selected="true" role="tab" aria-controls="fall" tabindex="0" data-image ="fall-image">
-      <img class=" thumbnail"src="./images/image-product-2-thumbnail.jpg" aria-selected="false"  role="tab" aria-controls="stylish" tabindex="-1"data-image ="stylish-image">
-      <img class=" thumbnail"src="./images/image-product-3-thumbnail.jpg"aria-selected="false"  role="tab" aria-controls="trail" tabindex="-1" data-image ="rock-image">
-      <img class=" thumbnail" src="./images/image-product-4-thumbnail.jpg"aria-selected="false" role="tab" aria-controls="athletic" tabindex="-1"data-image ="athletic-image">
+      <img class=" thumbnail" src="./images/image-product-1-thumbnail.jpg" aria-selected="true" role="tab" aria-controls="fall" tabindex="0" data-image ="fall-image"alt="fall">
+      <img class=" thumbnail"src="./images/image-product-2-thumbnail.jpg" aria-selected="false"  role="tab" aria-controls="stylish" tabindex="-1"data-image ="stylish-image"alt="stylish">
+      <img class=" thumbnail"src="./images/image-product-3-thumbnail.jpg"aria-selected="false"  role="tab" aria-controls="trail" tabindex="-1" data-image ="rock-image"alt="trail">
+      <img class=" thumbnail" src="./images/image-product-4-thumbnail.jpg"aria-selected="false" role="tab" aria-controls="athletic" tabindex="-1"data-image ="athletic-image"alt="athletic">
     </div>
 
     
@@ -77,18 +77,18 @@
         
         <picture id="fall-image" class="product-picture" >
           
-            <img src="./images/image-product-1.jpg">
+            <img src="./images/image-product-1.jpg" alt="product1">
            </picture>
         
           <picture hidden id="stylish-image" class=" product-picture">
-            <img src="./images/image-product-2.jpg">
+            <img src="./images/image-product-2.jpg"alt="product2">
           </picture>
 
           <picture hidden id="rock-image" class=" product-picture">
-            <img src="./images/image-product-3.jpg">
+            <img src="./images/image-product-3.jpg" alt="product3">
           </picture>
           <picture hidden id="athletic-image" class=" product-picture" >
-            <img src="./images/image-product-4.jpg">
+            <img src="./images/image-product-4.jpg" alt="product4">
           </picture>
        
           <div class="preview-box">
@@ -110,10 +110,7 @@
               <img class="slide " src="./images/image-product-3.jpg" alt="Shoes">
               <img class="slide " src="./images/image-product-4.jpg" alt="Shoes">
             </div>
-            <!-- IMAGE small -->
-            <!-- IMAGE small -->
-           <!-- IMAGE small -->
-           <!-- IMAGE small -->
+           
           </section>
           <button id="prev" class="btn btn--left hidden"  >
             <svg width="12" height="18" xmlns="http://www.w3.org/2000/svg">
